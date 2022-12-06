@@ -1,0 +1,348 @@
+<!doctype html>
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Halaman Utama</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css"> -->
+
+        <!-- For Plugins External CSS -->
+        <link rel="stylesheet" href={{ url_for('static', filename='css/plugins.css') }} type="text/css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }} type="text/css">
+
+        <!-- Theme Responsive CSS -->
+        <link rel="stylesheet" href={{ url_for('static', filename='css/responsive.css') }} type="text/css">
+
+        <script src={{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}></script>
+
+        <!--Jquery Cdn -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
+        
+    </head>
+    
+
+    <body data-spy="scroll" data-target="#main-navbar" >
+        <div id="menubar" class="main-menu">	
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand And Toggle Get Grouped For Better Mobile Display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{url_for('index')}}"><img src={{ url_for('static', filename="images/logo.png") }} width = 200px alt="" /></a>
+                    </div>
+
+                    <!-- Collect The Nav Links, Forms, And Other Content For Toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="{{url_for('index')}}">Beranda</a></li>
+                            <li><a href="{{url_for('more')}}">Informasi</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!--Home page style-->
+        <header id="home" class="sections">
+            <div class="container">
+
+                <div class="row">
+                    <div class="homepage-style">
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="unique-apps">
+                                <b>Website for <br>
+                                    Waste Detection</b> <br>
+                                <p align="justify">
+                                    <b>Website ini dibuat untuk membantu kamu mendeteksi sampah Biodegradable dan 
+                                       Non-Biodegradable yang ada di sekitarmu!</b> <br>
+                                       Ketahui dan praktikan cara pengolahan dari dua jenis sampah tersebut, buatlah perubahan kecil dimulai dari dirimu :)
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <div class="slider-area">
+
+                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="3000">
+                                    <!-- Indicators -->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+                                    </ol>
+
+                                    <!-- Wrapper For Slides -->
+                                    <div class="carousel-inner" role="listbox">
+
+                                        <div class="item active">
+                                            <img src="static/images/slider/one.png" alt="one" height="600" width="600">
+                                        </div>
+
+                                        <div class="item">
+                                            <img src={{ url_for('static', filename="images/slider/two.png") }} alt="images" height="600" width="600"/>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src={{ url_for('static', filename="images/slider/three.png") }} alt="images" height="600" width="600"/>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src={{ url_for('static', filename="images/slider/four.png") }} alt="images" height="600" width="600"/>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>	
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- Sections -->
+        <section id="our-portfolio" class="sections">
+            <div class="container">
+
+                <div class="row">
+                    <div class="heading">
+                        <div class="title text-center arrow-right">
+                            <h4>Informasi Singkat</h4>
+                        </div>
+                    </div>	
+
+                    <div class="portfolio-wrap">
+                        <div class="portfolio">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>SAMPAH BIODEGRADABLE</h4>
+                                    <p align="justify">
+                                        Sampah biodegradable merupakan sampah yang dapat diuraikan dengan proses 
+                                        biologi oleh organisme hidup lainnya, dan biasanya berasal dari tumbuhan dan hewan. 
+                                        Contoh dari sampah biodegradable adalah sisa makanan, kulit buah, dan lain-lain. 
+                                    </p>
+                                    <a href="{{url_for('more')}}" class="btn pt-btn btn-primary" role="button">Baca Selengkapnya</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src={{ url_for('static', filename="images/new/five.png") }} alt="images" height="600" width="600" />
+                            </div>
+
+                        </div>
+
+                        <div class="portfolio">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src={{ url_for('static', filename="images/new/six.png") }} alt="images" height="600" width="600" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <h4>SAMPAH NON-BIODEGRADABLE</h4>
+                                    <p align="justify">
+                                        Berbeda dengan sampah Biodegradable, sampah Non-Biodegradable tidak mudah terurai secara alami, hal ini 
+                                        dikarenakan rata-rata material dari sampah Non-Biodegradable berasal dari bahan yang sintetis. 
+                                        contoh sampah Non-Biodegradable diantaranya adalah botol, kaleng, kaca, dan lain-lain. 
+                                    </p>
+                                    <a href="{{url_for('more')}}" class="btn pt-btn btn-primary" role="button">Baca Selengkapnya</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->       
+        </section>
+
+        <section id="our-history" class="sections">
+            <div class="container">
+                <div class="heading">
+                    <div class="title text-center arrow-right">
+                        <h4>Deteksi Sampah</h4>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="main-history">
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="history-img">
+                                <img src="{{ url_for('video') }}">
+                            </div>   
+                        </div>
+
+                        <div class="col-md-6 col-sm-12 col-xs-12">
+                            <div class="history-wrapper">
+
+                                <div class="history-content">
+                                    <p>
+                                        <caption><b>Petunjuk Deteksi</b></caption>
+                                        <li>Aktifkan Kamera</li>
+                                        <li>Sesuaikan pencahayaan</li>
+                                        <li>Arahkan sampah pada kamera</li>  
+                                    </p>
+                                    <form method="post" id="On-btn" action="{{ url_for('tasks') }}">
+                                        <input class="btn btn-primary" type="submit" value="On/Off" name="On" id="'On">
+                                    </form> <br>
+                                    <p>
+                                        <caption><b>Sampah yang bisa dideteksi</b></caption>
+                                        <table class="table table-striped">
+                                            <thead>
+                                              <tr>
+                                                <th scope="col"> </th>
+                                                <th scope="col">Biodegradable</th>
+                                                <th scope="col">Non-Biodegradable</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <th scope="row">1</th>
+                                                <td>Buku Bekas</td>
+                                                <td>Lampu Bekas</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">2</th>
+                                                <td>Box Kardus</td>
+                                                <td>Botol Yakult</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">3</th>
+                                                <td>Telur</td>
+                                                <td>Botol Boncabe</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">4</th>
+                                                <td>Tomat</td>
+                                                <td>Kaleng (Herocyn)</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">5</th>
+                                                <td>Tisu</td>
+                                                <td>Kaleng (Bear Brand)</td>
+                                              </tr>
+                                              <tr>
+                                                <th scope="row">6</th>
+                                                <td>Bawang Putih</td>
+                                                <td>Baterai ABC</td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="our-team" class="sections">
+            <div class="container">
+
+                <div class="heading">
+                    <div class="title text-center arrow-left">
+                        <h4 class="">Tim Galenus</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid project-bg">
+                <div class="row">
+
+                    <div class="main-team text-center">
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member">
+
+                                <img class="img-circle" src={{ url_for('static', filename="images/team/3.png") }} alt="" />
+                                <h5>DINA AMELIA ALZAHRA</h5>
+                                <p>DEPLOYMENT</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member">
+                                <img class="img-circle" src={{ url_for('static', filename="images/team/2.png") }} alt="" />
+                                <h5>DWINDA PUTRI NURIA</h5>
+                                <p>DEPLOYMENT</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member">
+                                <img class="img-circle" src={{ url_for('static', filename="images/team/1.png") }} alt="" />
+                                <h5>SABAR RENDY SAMUEL SILALAHI</h5>
+                                <p>AI ENGINEER</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6 col-xs-12">
+                            <div class="team-member">
+                                <img class="img-circle" src={{ url_for('static', filename="images/team/4.png") }} alt="" />
+                                <h5>YANUAR GINTING</h5>
+                                <p>AI ENGINEER</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll-top">
+
+            <div class="scrollup">
+                <i class="fa fa-angle-double-up"></i>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="socio-copyright">
+
+                        <div class="social">
+                            <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+
+                        <p>Inspired by <a target="_blank" href="http://bootstrapthemes.co"> Bootstrap Themes </a>All rights reserved.</p>
+                    </div>
+                </div>	
+            </div>
+        </footer>
+
+
+        <script src={{ url_for('static', filename="js/vendor/jquery-1.11.2.min.js") }}></script>
+        <script src={{ url_for('static', filename="js/vendor/bootstrap.min.js") }}></script>
+        <script src={{ url_for('static', filename="js/plugins.js") }}></script>
+        <script src={{ url_for('static', filename="js/main.js") }}></script>
+        <script src={{ url_for('static', filename='js/script.js') }}></script>
+    </body>
+</html>

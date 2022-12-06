@@ -1,0 +1,189 @@
+<!doctype html>
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Selengkapnya</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }} type="text/css">
+        <!-- <link rel="stylesheet" href="assets/css/bootstrap-theme.min.css"> -->
+
+        <!-- For Plugins External CSS -->
+        <link rel="stylesheet" href={{ url_for('static', filename='css/plugins.css') }} type="text/css">
+
+        <!-- Theme Custom CSS -->
+        <link rel="stylesheet" href={{ url_for('static', filename='css/style.css') }} type="text/css">
+
+        <!-- Theme Responsive CSS -->
+        <link rel="stylesheet" href={{ url_for('static', filename='css/responsive.css') }} type="text/css">
+
+        <script src={{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}></script>
+    </head>
+    
+
+    <body data-spy="scroll" data-target="#main-navbar">
+        <div id="menubar" class="main-menu">	
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <!-- Brand And Toggle Get Grouped For Better Mobile Display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{url_for('index')}}"><img src={{ url_for('static', filename="images/logo.png") }} width = 200px alt="" /></a>
+                    </div>
+
+                    <!-- Collect The Nav Links, Forms, And Other Content For Toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="{{url_for('index')}}">Beranda</a></li>
+                            <li><a href="{{url_for('more')}}">Informasi</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+
+        <header id="home" class="sections">
+            <div class="container">
+
+                <div class="row">
+                    <div class="homepage-style">
+
+                        <div class="portfolio">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src={{ url_for('static', filename="images/new/nine.png") }} alt="images" height="600" width="600" />
+                            </div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item2">
+                                    <h4>SAMPAH BIODEGRADABLE</h4>
+                                    <p align="justify">
+                                        Sampah organik - dapat diurai (degradable) merupakan sampah yang dapat terurai oleh 
+                                        agen dekomposisi alami seperti air, sinar ultraviolet, oksigen, dan ozon, 
+                                        ataupun mikroorganisme seperti bakteri dan jamur.
+                                        Istilah ‘bio’ sendiri diambil untuk menyiratkan sifat biologis dari agen dekomposisi tersebut.
+                                        <br> <br>
+                                        Karena sifatnya yang dapat terurai, sampah biodegradable akan berubah dari organik kompleks 
+                                        menjadi unit yang lebih sederhana. Zat yang telah terurai dapat memberikan nutrisi pada tanah apabila dikelola kembali dengan benar. 
+                                        Oleh sebab itu, sampah biodegradable dapat dikategorikan sebagai sampah yang ramah lingkungan. <br> <br>
+                                        Contoh dari sampah biodegradable diantaranya adalah kulit sayur dan buah, sisa makanan, kertas, kardus, dan lain sebagainya.
+                                        Walaupun sampah ini bisa terurai secara alami, namun apabila tidak dikelola dengan benar akan menimbulkan berbagai masalah baru. <br> <br>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="portfolio-item3">
+                                <p align="justify"> 
+                                    Sampah biodegradable yang menumpuk bisa menghasilkan gas metana, 
+                                    lalu apabila sampah tersebut tidak terkena oleh oksigen dan sinar matahari, dapat menimbulkan ledakan. 
+                                    Selain itu, sampah ini juga dapat menimbulkan hal serius lainnya seperti menjadi salah satu sumber penyakit. 
+                                    Oleh karena itu dibutuhkan pengolahan sampah yang benar. Berikut merupakan beberapa saran 
+                                    upaya untuk mengurangi sampah biodegradable dalam skala rumah tangga: 
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="portfolio2">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <p align="justify">
+                                        <li>Hindari berbelanja bahan makanan yang berlebih </li>
+                                        <li>Donasikan bahan makanan berlebih yang masih layak</li>
+                                        <li>Distribusikan kepada pihak pengelola (co; bank sampah)</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>	
+                </div>
+            </div>
+        </header>
+
+
+        <!-- Sections -->
+        <section id="our-portfolio" class="sections">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio">
+                            <div class="portfolio-item3">
+                                <h4>SAMPAH NON-BIODEGRADABLE</h4>
+                                <p align="justify">
+                                    Berbanding terbalik dengan sampah Biodegradable, sampah Non-Biodegradable tidak dapat terurai 
+                                    melalui proses alami. Beberapa sampah Non-Biodegradable berasal dari bahan-bahan yang sintetis, 
+                                    sehingga tidak mudah membusuk atau mengalami proses degradasi. Oleh karena itu, 
+                                    sampah ini dianggap sebagai sampah yang tidak ramah lingkungan dan dapat menyebabkan pencemaran. 
+                                </p>
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <img class="portfolio-img img-responsive" src={{ url_for('static', filename="images/new/twelve.png") }} alt="images" height="600" width="600" />
+                            </div>
+
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="portfolio-item">
+                                    <p align="justify"> 
+                                        Contoh dari sampah Non-Biodegradable diantaranya adalah sampah yang terbuat dari plastik, 
+                                        alumunium, dan lain-lain. Untuk menangani masalah yang ditimbulkan akibat sampah non-biodegradable, 
+                                        berikut merupakan beberapa saran pengolahannya :
+                                        <li>Reduce, <br> Mengurangi penggunaan barang yang dapat menjadi sumber sampah. 
+                                            Contoh dari penerapan prinsip ini adalah dengan membawa botol minum saat berpergian, 
+                                            atau membawa tas belanjaan sendiri saat hendak berbelanja.</li>
+                                        <li>Reuse <br> Menggunakan kembali barang-barang yang ada contohnya seperti penggunaan botol bekas 
+                                            dan wadah plastik bekas untuk media tanam.</li>
+                                        <li>Recycle <br> Daur ulang barang menjadi sesuatu yang fungsional dan bernilai, contohnya 
+                                            adalah pengolahan sampah plastik menjadi ecobrick, kerajinan tangan, dan lain sebagainya.</li>
+                                    </p>
+                        
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /container -->       
+        </section>
+
+        <div class="scroll-top">
+
+            <div class="scrollup">
+                <i class="fa fa-angle-double-up"></i>
+            </div>
+
+        </div>
+
+        <!--Footer-->
+        <footer id="footer" class="footer">
+            <div class="container">
+
+                <div class="row">
+                    <div class="socio-copyright">
+
+                        <div class="social">
+                            <a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-twitter"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+                            <a target="_blank" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+
+                        <p>Inspired by <a target="_blank" href="http://bootstrapthemes.co"> Bootstrap Themes </a>All rights reserved.</p>
+                    </div>
+                </div>	
+            </div>
+        </footer>
+
+
+        <script src={{ url_for('static', filename="js/vendor/jquery-1.11.2.min.js") }}></script>
+        <script src={{ url_for('static', filename="js/vendor/bootstrap.min.js") }}></script>
+        <script src={{ url_for('static', filename="js/plugins.js") }}></script>
+        <script src={{ url_for('static', filename="js/main.js") }}></script>
+        <script src={{ url_for('static', filename='js/script.js') }}></script>
+    </body>
+</html>
