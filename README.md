@@ -1,4 +1,4 @@
-# Hello There👋, We Are Alphazero 1 Galenus
+# Hello There👋, We Are Galenus from Alphazero 1 
 
 <p align="center">
   <a href="https://tenor.com/">
@@ -7,13 +7,13 @@
 </p>
 
 # Galenus
-Galenus is a name team project for final exams subject Computer Vision class Alphazero 1 in Orbit Future Academy. We use the Github Version Control System to share and contribute to our project.
+Galenus is the name of the final project team in class Alphazero 1 at Orbit Future Academy. Our final project subject is Computer Vision. We use the Github Version Control System to share and contribute to our project.
 
 # Our Team
 [yanuarginting](https://github.com/yanuarginting/) `Yanuar Ginting` | [rendysilalahi](https://github.com/rendysilalahi) `Sabar Rendy Samuel Silalahi` | [dwindaputrn](https://github.com/dwindaputrn) `Dwinda Putri Nuria` | [dindin666](https://github.com/dindin666) `Dina Amelia Alzahra`
 
 # What we're create?
-We Are Creating a website-based application that can detect waste in real time based on its properties, likely, Biodegradable and Non-Biodegradable using YOLOv5 as a model. With this application, we can educate the public about the importance of protecting the environment by recognizing waste that can be decomposed easily (Biodegradable) and which cannot be easily decomposed (Non-Biodegradable).
+We create a website-based application that can detect waste in real time based on its type such as Biodegradable and Non-Biodegradable using YOLOv5 as a model. With this application, we can educate people about the importance of protecting the environment by recognizing waste that can be decomposed easily (Biodegradable) and which cannot be easily decomposed (Non-Biodegradable).
 
 ![lampu](https://user-images.githubusercontent.com/94690346/205849736-ecb314f4-a95b-4a28-a416-95153d387d16.png)
 
