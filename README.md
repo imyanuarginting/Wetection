@@ -7,7 +7,7 @@
 </p>
 
 # Galenus
-Galenus is a Project for Final Exams Subject Computer Vision Class Alphazero 1 in Orbit Future Academy. We use the Github Version Control System to share and contribute to our project.
+Galenus is a name team project for final exams subject Computer Vision class Alphazero 1 in Orbit Future Academy. We use the Github Version Control System to share and contribute to our project.
 
 ![framework](https://img.shields.io/badge/framework-flask-red)
 ![libraries](https://img.shields.io/badge/libraries-opencv-green)
