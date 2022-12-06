@@ -10,7 +10,7 @@
 Galenus is a name team project for final exams subject Computer Vision class Alphazero 1 in Orbit Future Academy. We use the Github Version Control System to share and contribute to our project.
 
 # Our Team
-[yanuarginting](https://github.com/yanuarginting/) `Yanuar Ginting` | [rendysilalahi](https://github.com/rendysilalahi) `Sabar Rendy Samuel Silalahi`
+[yanuarginting](https://github.com/yanuarginting/) `Yanuar Ginting` | [rendysilalahi](https://github.com/rendysilalahi) `Sabar Rendy Samuel Silalahi` | [dwindaputrn](https://github.com/dwindaputrn) `Dwinda Putri Nuria` | [dindin666](https://github.com/dindin666) `Dina Amelia Alzahra`
 
 ![framework](https://img.shields.io/badge/framework-flask-red)
 ![libraries](https://img.shields.io/badge/libraries-opencv-green)
